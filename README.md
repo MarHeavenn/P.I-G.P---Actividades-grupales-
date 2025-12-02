@@ -2,28 +2,29 @@
 
 ## 1. contexto del proyecto
 - equipo: Gisee
-- sprint #: 2   período: 2025-21-10 / 2025-7-11
-- meta del sprint: Implementar el módulo RAG con almacenamiento vectorial, gestión de embeddings y conexión con modelo Gemini.
+- sprint #: 3   período: 2025-01-12 / 2025-01-12
+- meta del sprint: El objetivo de este sprint es completar las actividades finales del proyecto, enfocándose en mejorar el rendimiento del asistente conversacional, implementar medidas de seguridad básicas para la protección de datos de los usuarios, avanzar en las primeras pruebas de integración con el hardware de entrada y salida de audio y preparar la documentación final requerida para la entrega del proyecto.
+Durante este sprint se optimizará la fluidez del flujo conversacional y el acceso a la memoria contextual, se aplicará cifrado a la información sensible almacenada, se validará el funcionamiento inicial del módulo de voz a texto y texto a voz con el hardware disponible y se realizarán pruebas finales del sistema, junto a la generación del documento final del proyecto.
 
 ## 2. resumen ejecutivo (al corte)
 - estado general: ☑ verde — criterio: se cumplieron todas las historias planificadas dentro del presupuesto.
-- principales riesgos/bloqueos: carga del modelo Gemini generó lentitud al inicio del sprint.
-- decisiones tomadas: optimizar la conexión con Gemini y paralelizar el preprocesamiento de embeddings en el siguiente sprint.
+- principales riesgos/bloqueos:  rendimiento del asistente, seguridad, integración con hardware de audio y cierre/documentación
+
 
 ## 3. métricas clave
-- BAC total: 5822  |  PV: 4586 |  EV: 3846,285714  |  AC: 4270
-- SV = EV - PV: -739,7142857  |  CV = EV - AC: -423,7142857
-- SPI = EV/PV: 0,838701639  |  CPI = EV/AC: 0,900769488
-- EAC = BAC/CPI: 6941,681919  |  ETC = EAC - AC: -4269,099231
+- BAC total: 8,202  |  PV: 6,102 |  EV: 6,680.29  |  AC: 6,990
+- SV = EV - PV: 578.29  |  CV = EV - AC: -309.71
+- SPI = EV/PV: 1.0948  |  CPI = EV/AC: 0.9557
+- EAC = BAC/CPI: 7,491.99  |  ETC = EAC - AC: -6,989.04
 
-> Fuente: archivo **Plantilla-EVM-Sprint.xlsx** (hojas *WBS*, *Costos*, *Métricas*).
+> Fuente: archivo **Plantilla-EVM-Sprint-3-Project-GISEE.xlxs** (hojas *WBS*, *Costos*, *Métricas*).
 
 ## 4. WBS y definición de hecho (DoD)
 - regla de ganancia por entregable: ☑ 50/50
 - evidencia mínima de DoD por tipo:
-  - feature: código funcional en rama principal + pruebas unitarias + validación en entorno staging
-  - bug: issue documentado + test reproducible + commit del fix + verificación del QA
-  - tech: configuración Docker y entorno validada con despliegue exitoso
+    - feature: código funcional integrado en rama principal + pruebas unitarias pasando + validación de la funcionalidad en entorno staging contra criterios de aceptación.​
+    - bug: issue documentado con pasos de reproducción + test que demuestra el fallo y la corrección + commit del fix integrado en rama principal + verificación del QA marcada como                 aprobada.​
+    - tech: configuración Docker versionada en repositorio + entorno levantado correctamente con esa configuración y despliegue exitoso del servicio + evidencia (logs/capturas) de que el servicio arranca y responde de forma estable
 
 ## 5. gráficos sugeridos (opcional)
 - curva S (PV/EV/AC) al corte
